@@ -54,7 +54,7 @@ div.card-box {
 /* IMAGEM */
 div.card-box .img-box {
     padding: 119px;
-    background-image: url('images/image-product-desktop.jpg');
+    background-image: url(images/image-product-desktop.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px 0 0px 10px;
