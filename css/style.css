@@ -1,0 +1,132 @@
+/* PERMITIR ACENTUAÇÕES NO SITE */
+@charset "UTF-8";
+
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* PALETA DE CORES E FONTES */
+:root {
+
+    --primary1: #3c8067;
+    --primary2: #f2ebe3;
+
+    --netral1: #1c232b;
+    --netral2: #6c7289;
+    --netral3: #ffffff;
+
+    --fonte1: 'Montserrat', sans-serif;
+    --fonte2: 'Fraunces', serif;
+
+}
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    background-color: var(--primary2);
+}
+
+div.container {
+    margin: 120px auto;
+    max-width: 502px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+div.card-box {
+    display: flex;
+    background-color: var(--netral3);
+    border-radius: 10px;
+    height: 359px;
+}
+
+/* IMAGEM */
+div.card-box .img-box {}
+
+div.card-box .img-box img {
+    border-radius: 10px 0px 0px 10px;
+    width: 239px;
+}
+
+/* DESCRIÇÃO */
+div.description {
+    padding: 20px;
+}
+
+div.description h2 {
+    font-family: var(--fonte1);
+    font-weight: 100;
+    color: var(--netral2);
+    font-size: 12px;
+}
+
+div.description h1 {
+    margin: 10px 0;
+    color: var(--netral1);
+    line-height: 30px;
+}
+
+div.description p {
+    font-size: 14px;
+    font-family: var(--fonte1);
+    color: var(--netral2);
+    line-height: 22px;
+}
+
+/* PREÇOS */
+div.description div.precos-box {
+    margin: 10px 10px 17px 10px;
+    display: flex;
+}
+
+div.description div.precos-box span#preco {
+    font-family: var(--fonte2);
+    color: var(--primary1);
+    font-size: 23px;
+    margin-right: 20px;
+}
+
+div.description div.precos-box span#precoDel {
+    color: var(--netral2);
+    font-size: 15px;
+}
+
+/* BOTÃO */
+div.description div.button-box {}
+
+div.description div.button-box button  {
+    font-weight: 700;
+    margin: auto;
+    width: 100%;
+    font-family: var(--fonte1);
+    display: block;
+    border-radius: 10px;
+    color: var(--primary2);
+    padding: 10px;
+    background-color: var(--primary1);
+    border: none;
+}
+
+div.description div.button-box button img {
+    margin-right: 10px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 550px) {
+
+    .div .card-box .img-box  {
+        display: none;
+    }
+
+}
