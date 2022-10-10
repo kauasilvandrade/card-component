@@ -2,7 +2,6 @@
 @charset "UTF-8";
 
 /* FONTES */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
@@ -32,14 +31,15 @@
 /* CORPO */
 body {
     background-color: var(--primary2);
-}
-
-div.container {
-    margin: 120px auto;
-    max-width: 502px;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+div.container {
+    max-width: 502px;
 }
 
 /* CARD */
@@ -47,29 +47,28 @@ div.card-box {
     display: flex;
     background-color: var(--netral3);
     border-radius: 10px;
-    height: 357px;
+    height: 22.31rem;
 }
 
 /* IMAGEM */
 div.card-box .img-box {
-    padding: 119px;
+    padding: 7.43rem;
     background-image: url(images/image-product-desktop.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px 0 0px 10px;
 }
 
-
 /* DESCRIÇÃO */
 div.description {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 div.description h2 {
     font-family: var(--fonte1);
     font-weight: 100;
     color: var(--netral2);
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 div.description h1 {
