@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   
   <title>Frontend Mentor | Product preview card component</title>
 
@@ -15,14 +15,14 @@
 <!-- CORPO -->
 <body>
   
-  <!-- CONTAINER -->
+    <!-- CONTAINER -->
     <div class="container">
 
       <!-- CARD -->
       <div class="card-box">
 
         <!-- IMAGEM -->
-        <div class="img-box">
+        <div class="card-box__img-box">
 
         </div>
 
@@ -41,18 +41,18 @@
           <!--   -->
           <div class="precos-box">
 
-            <span id="preco">$149.99</span>
+            <span class="precos-box__preco">$149.99</span>
 
-            <span id="precoDel"><del>$169.99</del></span>
+            <span class="precos-box__preco precos-box__preco--antigo">$169.99</span>
 
           </div>
 
           <!-- BOTÃO -->
           <div class="button-box">
 
-            <button>
+            <button class="botao">
 
-              <img src="images/icon-cart.svg" alt="Imagem Icon Carrinho"> 
+              <img src="images/icon-cart.svg" alt="Imagem Icon Carrinho" class="botao__img"> 
 
               Add to Cart
 

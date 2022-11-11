@@ -35,16 +35,17 @@ body {
     background-color: var(--primary2);
 }
 
-div.container {
-    margin: 120px auto;
-    max-width: 502px;
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 /* CARD */
-div.card-box {
+.card-box {
+    max-width: 502px;
     display: flex;
     background-color: var(--netral3);
     border-radius: 10px;
@@ -52,34 +53,33 @@ div.card-box {
 }
 
 /* IMAGEM */
-div.card-box .img-box {
+.card-box__img-box {
     padding: 119px;
-    background-image: url('images/image-product-desktop.jpg');
+    background-image: url('../images/image-product-desktop.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px 0 0px 10px;
 }
 
-
 /* DESCRIÇÃO */
-div.description {
+.description {
     padding: 20px;
 }
 
-div.description h2 {
+.description h2 {
     font-family: var(--fonte1);
     font-weight: 100;
     color: var(--netral2);
     font-size: 12px;
 }
 
-div.description h1 {
+.description h1 {
     margin: 10px 0;
     color: var(--netral1);
     line-height: 30px;
 }
 
-div.description p {
+.description p {
     font-size: 14px;
     font-family: var(--fonte1);
     color: var(--netral2);
@@ -87,27 +87,28 @@ div.description p {
 }
 
 /* PREÇOS */
-div.description div.precos-box {
+.precos-box {
     margin: 10px 10px 17px 10px;
     display: flex;
 }
 
-div.description div.precos-box span#preco {
+.precos-box__preco {
     font-family: var(--fonte2);
     color: var(--primary1);
     font-size: 23px;
     margin-right: 20px;
 }
 
-div.description div.precos-box span#precoDel {
+.precos-box__preco--antigo {
     color: var(--netral2);
     font-size: 15px;
+    text-decoration: line-through;
 }
 
 /* BOTÃO */
-div.description div.button-box {}
+.button-box {}
 
-div.description div.button-box button  {
+.button-box .botao  {
     font-weight: 700;
     margin: auto;
     width: 100%;
@@ -118,32 +119,28 @@ div.description div.button-box button  {
     padding: 10px;
     background-color: var(--primary1);
     border: none;
+    transition: .5s;
 }
 
-div.description div.button-box button img {
+.button-box .botao:hover {
+    background-color: #224a3b;
+}
+
+.botao__img {
     margin-right: 10px;
-}
-
-div.description div.button-box button:hover {
-    background-color: #24493b;
 }
 
 /* RESPONSIVIDADE */
 @media (max-width: 510px) {
 
-    .container {
-        margin: 63px auto;
-        height: 400px;
-    }
-
-    div.card-box {
+    .card-box {
         flex-direction: column;
         height: 528px;
         width: 22em;
     }
 
-    div.card-box .img-box  {
-        background-image: url('images/image-product-mobile.jpg');
+    .card-box__img-box  {
+        background-image: url('../images/image-product-mobile.jpg');
         border-radius: 10px 10px 0 0;
     }
 
