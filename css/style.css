@@ -44,7 +44,7 @@ body {
 }
 
 /* CARD */
-.card-box {
+.cardBox {
     max-width: 502px;
     display: flex;
     background-color: var(--netral3);
@@ -53,7 +53,7 @@ body {
 }
 
 /* IMAGEM */
-.card-box__img-box {
+.cardBox__img {
     padding: 119px;
     background-image: url('../images/image-product-desktop.jpg');
     background-size: 100%;
@@ -62,24 +62,24 @@ body {
 }
 
 /* DESCRIÇÃO */
-.description {
+.cardBox__description {
     padding: 20px;
 }
 
-.description h2 {
+.cardBox__description h2 {
     font-family: var(--fonte1);
     font-weight: 100;
     color: var(--netral2);
     font-size: 12px;
 }
 
-.description h1 {
+.cardBox__description h1 {
     margin: 10px 0;
     color: var(--netral1);
     line-height: 30px;
 }
 
-.description p {
+.cardBox__description p {
     font-size: 14px;
     font-family: var(--fonte1);
     color: var(--netral2);
@@ -87,28 +87,28 @@ body {
 }
 
 /* PREÇOS */
-.precos-box {
+.precosBox {
     margin: 10px 10px 17px 10px;
     display: flex;
 }
 
-.precos-box__preco {
+.precosBox__preco {
     font-family: var(--fonte2);
     color: var(--primary1);
     font-size: 23px;
     margin-right: 20px;
 }
 
-.precos-box__preco--antigo {
+.precosBox__preco--antigo {
     color: var(--netral2);
     font-size: 15px;
     text-decoration: line-through;
 }
 
 /* BOTÃO */
-.button-box {}
+.botaoBox {}
 
-.button-box .botao  {
+.botaoBox__botao  {
     font-weight: 700;
     margin: auto;
     width: 100%;
@@ -122,24 +122,28 @@ body {
     transition: .5s;
 }
 
-.button-box .botao:hover {
+.botaoBox__botao:hover {
     background-color: #224a3b;
 }
 
-.botao__img {
+.botaoBox__img {
     margin-right: 10px;
 }
 
 /* RESPONSIVIDADE */
 @media (max-width: 510px) {
 
-    .card-box {
+    .container {
+        width: 100%;
+    }
+
+    .cardBox {
         flex-direction: column;
         height: 528px;
         width: 22em;
     }
 
-    .card-box__img-box  {
+    .cardBox__img  {
         background-image: url('../images/image-product-mobile.jpg');
         border-radius: 10px 10px 0 0;
     }
