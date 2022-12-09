@@ -71,11 +71,10 @@ body {
     font-weight: 100;
     color: var(--netral2);
     font-size: 12px;
-    letter-spacing: 3px;
 }
 
 .cardBox__description h1 {
-    margin: 10px 0 19px 0;
+    margin: 10px 0;
     color: var(--netral1);
     line-height: 30px;
     font-size: 1.8em;
@@ -83,16 +82,15 @@ body {
 }
 
 .cardBox__description p {
-    font-size: 13px;
+    font-size: 14px;
     font-family: var(--fonte1);
     color: var(--netral2);
     line-height: 22px;
-    margin-bottom: 17px;
 }
 
 /* PREÇOS */
 .precosBox {
-    margin: 10px 10px 20px 10px;
+    margin: 10px 10px 17px 10px;
     display: flex;
 }
 
@@ -105,7 +103,7 @@ body {
 
 .precosBox__preco--antigo {
     color: var(--netral2);
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: line-through;
 }
 
@@ -117,9 +115,7 @@ body {
     margin: auto;
     width: 100%;
     font-family: var(--fonte1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     border-radius: 10px;
     color: var(--primary2);
     padding: 10px;
